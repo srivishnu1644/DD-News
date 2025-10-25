@@ -10,7 +10,7 @@ function App() {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('general');
     
-    const API_KEY = '12146d9ca3dc4c7eb346669aa13f8131'; 
+    const API_KEY = import.meta.env.VITE_NEWS_API_KEY; 
 
     useEffect(() => {
         fetchNews('', selectedCategory); 
