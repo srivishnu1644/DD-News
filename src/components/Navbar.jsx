@@ -1,6 +1,6 @@
 import logoImage from '../assets/logo.jpg';
 function Navbar({ searchTerm, setSearchTerm, handleSearch, handleCategoryChange, selectedCategory }) {
-    const categories = ['general', 'business', 'technology', 'sports', 'health', 'science'];
+    const categories = ['breaking-news', 'business', 'technology', 'sports', 'health', 'science'];
     return (
         <nav className="bg-black shadow-md p-4 sticky top-0 z-10">
             <div className="container mx-auto flex justify-between items-center flex-wrap gap-3">
@@ -19,7 +19,7 @@ function Navbar({ searchTerm, setSearchTerm, handleSearch, handleCategoryChange,
                             }
                             transition-colors`}
                     >
-                        {category}
+                        {category.replace('-', '')}
                     </button>
                 ))}
 
