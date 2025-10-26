@@ -24,10 +24,10 @@ function App() {
         const encodedQuery = encodeURIComponent(query.trim());
 
         if (encodedQuery) {
-            url = `https://gnews.io/api/v4/search?q=${encodedQuery}&lang=en&country=us&token=${API_KEY}`;
+            url = `/api/search?q=${encodedQuery}&lang=en&country=us&token=${API_KEY}`;
         } else {
            
-            url =`https://gnews.io/api/v4/top-headlines?topic=${category}&lang=en&country=us&token=${API_KEY}`;
+            url =`/api/top-headlines?topic=${category}&lang=en&country=us&token=${API_KEY}`;
         }
 
        try {
