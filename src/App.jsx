@@ -24,11 +24,13 @@ function App() {
         const encodedQuery = encodeURIComponent(query.trim());
 
         if (encodedQuery) {
-            url = `/gnews/search?q=${encodedQuery}&lang=en&country=us&token=${API_KEY}`;
+            url = `/api/search?q=${encodedQuery}&lang=en&country=us&apikey=${API_KEY}`;
         } else {
-           
-            url =`/gnews/top-headlines?topic=${category}&lang=en&country=us&token=${API_KEY}`;
+
+            url= `/api/top-headlines?category=${category}&lang=en&country=us&apikey=${API_KEY}`;
         }
+
+        console.log('Fetching URL:', url);
 
        try {
             
