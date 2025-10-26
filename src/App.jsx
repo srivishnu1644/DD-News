@@ -24,10 +24,10 @@ function App() {
         const encodedQuery = encodeURIComponent(query.trim());
 
         if (encodedQuery) {
-            url = `/api/search?q=${encodedQuery}&lang=en&country=us&token=${API_KEY}`;
+            url = `/gnews/search?q=${encodedQuery}&lang=en&country=us&token=${API_KEY}`;
         } else {
            
-            url =`/api/top-headlines?topic=${category}&lang=en&country=us&token=${API_KEY}`;
+            url =`/gnews/top-headlines?topic=${category}&lang=en&country=us&token=${API_KEY}`;
         }
 
        try {
