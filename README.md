@@ -20,6 +20,7 @@ A clean and modern news feed application built with React and styled with Tailwi
 - **Styling:** Tailwind CSS (using Play CDN)
   - _Note: The Play CDN was used for rapid prototyping and local development convenience. For production environments, installing Tailwind CSS as a PostCSS plugin is recommended as per Tailwind's documentation._
 - **API:** [GNews API](https://gnews.io/)
+- **Proxy:** Vite development server proxy for API requests
 
 ## Getting Started Locally
 
